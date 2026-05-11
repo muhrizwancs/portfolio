@@ -1,0 +1,24 @@
+{
+  "name": "muhammad-rizwan-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Muhammad Rizwan — Full Stack & Flutter Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=index.html",
+    "build": "echo 'Static site — no build step needed'"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "flutter",
+    "developer",
+    "muhammad-rizwan"
+  ],
+  "author": "Muhammad Rizwan <muhrizwancs@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}
