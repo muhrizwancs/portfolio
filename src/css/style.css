@@ -66,7 +66,7 @@ nav {
 }
 
 nav.scrolled {
-  background: rgba(10, 10, 15, 0.96);
+  background: rgba(10, 10, 15, 0.92);
 }
 
 .nav-logo {
@@ -110,13 +110,8 @@ nav.scrolled {
   color: var(--text);
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
+.nav-links a:hover::after {
   transform: scaleX(1);
-}
-
-.nav-links a.active {
-  color: var(--text);
 }
 
 /* Hamburger (mobile) */
@@ -213,18 +208,10 @@ nav.scrolled {
 
 .hero-role {
   font-size: 1.15rem;
-  color: var(--accent2);
+  color: var(--muted);
   margin-top: 0.6rem;
-  font-weight: 400;
-  min-height: 1.8rem;
+  font-weight: 300;
   animation: fadeUp 0.7s 0.2s ease both;
-}
-
-.hero-role::after {
-  content: '|';
-  animation: blink 1s step-end infinite;
-  margin-left: 2px;
-  color: var(--accent);
 }
 
 .hero-bio {
@@ -428,10 +415,6 @@ section {
 }
 
 /* ── EXPERIENCE ── */
-#experience {
-  background: var(--bg);
-}
-
 .exp-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -462,7 +445,6 @@ section {
   font-weight: 500;
   margin-bottom: 0.3rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .exp-role {
@@ -481,7 +463,6 @@ section {
 .exp-desc {
   color: var(--muted);
   font-size: 0.95rem;
-  line-height: 1.7;
 }
 
 /* ── PROJECTS ── */
@@ -577,10 +558,6 @@ section {
 }
 
 /* ── EDUCATION ── */
-#education {
-  background: var(--bg);
-}
-
 .edu-timeline {
   position: relative;
   padding-left: 2rem;
@@ -640,10 +617,6 @@ section {
   margin: 0 auto;
 }
 
-.contact-inner .section-sub {
-  max-width: 100%;
-}
-
 .contact-links {
   display: flex;
   justify-content: center;
@@ -695,7 +668,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ── KEYFRAME ANIMATIONS ── */
+/* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -716,36 +689,11 @@ footer {
 }
 
 @keyframes breathe {
-  0%, 100% { transform: scale(1);    opacity: 0.8; }
+  0%, 100% { transform: scale(1); opacity: 0.8; }
   50%       { transform: scale(1.08); opacity: 1; }
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
-}
-
-/* ── RESPONSIVE — TABLET ── */
-@media (max-width: 1024px) {
-  nav {
-    padding: 1.2rem 2rem;
-  }
-
-  .hero {
-    padding: 8rem 2rem 5rem;
-  }
-
-  section {
-    padding: 5rem 2rem;
-  }
-
-  .hero-photo-ring {
-    width: 280px;
-    height: 280px;
-  }
-}
-
-/* ── RESPONSIVE — MOBILE ── */
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav {
     padding: 1rem 1.5rem;
@@ -782,8 +730,6 @@ footer {
 
   .hero-bio {
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .hero-cta {
@@ -795,13 +741,8 @@ footer {
   }
 
   .hero-photo-ring {
-    width: 220px;
-    height: 220px;
-  }
-
-  .hero-badge {
-    right: 0;
-    bottom: -5px;
+    width: 240px;
+    height: 240px;
   }
 
   section {
@@ -810,10 +751,5 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
   }
 }
